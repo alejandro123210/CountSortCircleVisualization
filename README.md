@@ -5,6 +5,6 @@ This is a animated representation of count sort using circles. If you have to so
 
 
 # Count Sort Graph Visualization
-This is an alternate representation of count sort using a graph style animation. The integers are converted into columns of different heights representing the integers. A bar comes down from the top and moves the first thing it touches to the other end of the view, as it goes down to the bottom, the views become sorted! 
+This is an alternate representation of count sort using a graph style animation. The integers are converted into columns of different heights representing the integers. A bar comes down from the top and moves the first thing it touches to the other end of the view, as it goes down to the bottom, the columns become sorted! 
 
 ![Alt Text](https://media.giphy.com/media/4QFqHZol4b1yGwti6A/giphy.gif)
