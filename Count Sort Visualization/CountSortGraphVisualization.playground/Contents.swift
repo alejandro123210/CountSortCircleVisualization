@@ -37,22 +37,20 @@ let rectangleForAnimation = UIView(frame: CGRect(x: 0, y: 25, width: 253, height
 rectangleForAnimation.backgroundColor = UIColor.white
 view1.addSubview(rectangleForAnimation)
 
+var newRectPosition = 590
 Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
     if rectangleForAnimation.frame.origin.y < 245 {
         rectangleForAnimation.frame.origin.y += 4
-    }
-   
-}
-
-var newRectPosition = 590
-Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
-    for view in viewArray {
-        if rectangleForAnimation.frame.intersects(view.frame){
-            view.frame.origin.x = CGFloat(newRectPosition)
-            newRectPosition -= 11
+        for view in viewArray {
+            if rectangleForAnimation.frame.intersects(view.frame){
+                view.frame.origin.x = CGFloat(newRectPosition)
+                newRectPosition -= 11
+            }
         }
     }
 }
+
+
 
 
 
